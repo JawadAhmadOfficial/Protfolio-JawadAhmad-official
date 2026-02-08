@@ -433,6 +433,90 @@ kbd {
     font-size: 100%;
     font-weight: 700; }
 
+    /* Assignment DropDown */
+
+.AssiSec{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+
+}    
+
+.fancy-dropdown {
+  position: relative;
+  width: fit-content;
+  margin-top: 15px;
+}
+
+.fancy-btn {
+  width: fit-content;
+  padding: 12px 16px;
+  border-radius: 30px;
+  border: none;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  box-shadow: 0 8px 20px rgba(37, 117, 252, 0.35);
+  transition: all 0.3s ease;
+}
+
+.fancy-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(37, 117, 252, 0.5);
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+.fancy-dropdown.active .arrow {
+  transform: rotate(180deg);
+}
+
+.fancy-menu {
+  position: absolute;
+  top: 115%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 8px 0;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.18);
+  opacity: 0;
+  transform: translateY(10px);
+  pointer-events: none;
+  transition: all 0.35s ease;
+  z-index: 1000;
+}
+
+.fancy-dropdown.active .fancy-menu {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.fancy-menu a {
+  display: block;
+  padding: 12px 18px;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.25s ease;
+}
+
+.fancy-menu a:hover {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+  padding-left: 24px;
+}
+  
+
 pre {
   display: block;
   font-size: 87.5%;

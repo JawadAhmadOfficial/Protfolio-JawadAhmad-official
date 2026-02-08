@@ -192,6 +192,21 @@
 									// Start the typing animation loop
 									playTypingAnimation(typingTexts[0]);
 
+                                     //Assignment Dropdown Button
+									function toggleFancy(button) {
+                                     const dropdown = button.parentElement;
+                                    dropdown.classList.toggle("active");
+                                       }
+
+                                     // Close when clicking outside
+                                       document.addEventListener("click", function (e) {
+                                       document.querySelectorAll(".fancy-dropdown").forEach(drop => {
+                                      if (!drop.contains(e.target)) {
+                                        drop.classList.remove("active");
+                                     }
+                                     });
+                                   });
+
 								</script>
 
 								<br>
@@ -210,7 +225,94 @@
 				</div>
 			</div>
 		</div>
-	</section>
+		<!-- HTML -->
+<div class="AssiSec">
+<div class="fancy-dropdown">
+<button class="btn btn-white btn-outline-white py-3 px-4" onclick="toggleFancy(this)">
+              HTML Assignments
+ <span class="arrow">▾</span>
+</button>
+
+    <div class="fancy-menu">
+        <a href="https://jawadahmadofficial.github.io/JawadAhmad-HTML-Assignment-01/">Assignment.NO: 01</a>
+        <a href="https://jawadahmadofficial.github.io/JawadAhmad-HTML-Assignment--02/">Assignment.NO: 02</a>
+        <a href="https://jawadahmadofficial.github.io/JawadAhmad-HTML-Assignment-03/"> Assignment.NO: 03</a>
+        <a href="https://jawadahmadofficial.github.io/JawadAhmad-HTML-Assignment-04/"> Assignment.NO: 04</a>
+        <a href="https://jawadahmadofficial.github.io/JawadAhmad-HTML-Assignment-05/"> Assignment.NO: 05</a>
+        <a href="https://jawadahmadofficial.github.io/JawadAhmad-HTML-Assignment-06/"> Assignment.NO: 06</a>
+    </div>
+</div>
+<!-- CSS Assignments -->
+ <div class="fancy-dropdown">
+<button class="btn btn-white btn-outline-white py-3 px-4" onclick="toggleFancy(this)">
+              CSS Assignments
+ <span class="arrow">▾</span>
+</button>
+
+    <div class="fancy-menu">
+        <a href="#"> Assignment.NO: 01</a>
+        <a href="#">Assignment.NO: 02</a>
+        <a href="#">Assignment.NO: 03</a>
+        <a href="#">Assignment.NO: 04</a>
+        <a href="#">Assignment.NO: 05</a>
+        <a href="#">Assignment.NO: 06</a>
+    </div>
+</div>
+
+<!-- JavaScript Assignments -->
+ <div class="fancy-dropdown">
+<button class="btn btn-white btn-outline-white py-3 px-4" onclick="toggleFancy(this)">
+              JavaScript Assignments
+ <span class="arrow">▾</span>
+</button>
+
+    <div class="fancy-menu">
+        <a href="#"> Assignment.NO: 01</a>
+        <a href="#"> Assignment.NO: 02</a>
+        <a href="#"> Assignment.NO: 03</a>
+        <a href="#"> Assignment.NO: 04</a>
+        <a href="#"> Assignment.NO: 05</a>
+        <a href="#"> Assignment.NO: 06</a>
+        <a href="#"> Assignment.NO: 07</a>
+        <a href="#"> Assignment.NO: 08</a>
+        <a href="#"> Assignment.NO: 09</a>
+    </div>
+</div>
+
+
+<!-- DOM Assignments -->
+ <div class="fancy-dropdown">
+<button class="btn btn-white btn-outline-white py-3 px-4" onclick="toggleFancy(this)">
+              DOM Assignments
+ <span class="arrow">▾</span>
+</button>
+
+    <div class="fancy-menu">
+        <a href="#"> Assignment.NO: 01</a>
+        <a href="#"> Assignment.NO: 02</a>
+        <a href="#"> Assignment.NO: 03</a>
+        <a href="#"> Assignment.NO: 04</a>
+        <a href="#"> Assignment.NO: 05</a>
+        <a href="#"> Assignment.NO: 06</a>
+    </div>
+</div>
+
+<!-- Class Tasks -->
+ <div class="fancy-dropdown">
+<button class="btn btn-white btn-outline-white py-3 px-4" onclick="toggleFancy(this)">
+              Class Tasks
+ <span class="arrow">▾</span>
+</button>
+
+    <div class="fancy-menu">
+        <a href="#">Taske.No: 01</a>
+        <a href="#">Taske.No: 02</a>
+        <a href="#">Taske.No: 03</a>
+        <a href="#">Taske.No: 04</a>
+    </div>
+</div>
+</div>
+</section>
 
 
 
@@ -530,14 +632,13 @@
 				<!-- project.No: 1 Agliclucher Base Project using HTML,CSS,Boostrap. -->
 				<div class="col-md-4 d-flex ftco-animate">
 					<div class="blog-entry justify-content-end">
-						<a href="https://jawadahmadofficial.github.io/SMIT-Boostrap-project-1/
-"
-						class="block-20 zoom-effect" style="background-image: url('images/P-1.png');">
+						<a href=" https://jawadahmadofficial.github.io/SMIT-Boostrap-project-1/"
+						class="block-20 zoom-effect" style="background-image: url('../Portfolio/images/Testy\ Food\ Websit.png');">
 						</a>
 						<div class="text mt-3 float-right d-block">
 
-							<h3 class="heading"><a href="#">Agliclucher Base Project using HTML,CSS,Boostrap</a></h3>
-							<p>To increase the Agliclucher all activity and promoute a Said affect of chemical</p>
+							<h3 class="heading"><a href="#">Restorant  Base Project using HTML,CSS,Boostrap</a></h3>
+							<p>This proposal aims to improve restaurant operations by using safe ingredients and reducing the harmful effects of chemicals in food preparation.</p>
 						</div>
 					</div>
 				</div>
@@ -545,15 +646,15 @@
 				<!-- project.No: 2 Designed & analyze a Food website for Restorant. -->
 				<div class="col-md-4 d-flex ftco-animate">
 					<div class="blog-entry justify-content-end">
-						<a href="https://jawadahmadofficial.github.io/SMIT-1stHacktanHTML-CSS/
+						<a href="https://jawadahmadofficial.github.io/JawadAhmad-1st-E-Commerce-Websit/"
 "
-							class="block-20 zoom-effect" style="background-image: url('images/p-2.png');">
+							class="block-20 zoom-effect" style="background-image: url('../Portfolio/images/E-Commerce\ Website.png');">
 						</a>
 						<div class="text mt-3 float-right d-block">
 
 							<h3 class="heading"><a
-									href="#">Designed & analyze a Food website for Restorant</a></h3>
-							<p>To Increase the Customer and sales of the Restorant, a Website was created using HTML,CSS,& Boostrap</p>
+									href="#">Designed & analyze for E-Commerce</a></h3>
+							<p>To Increase the Customer and sales of the Business, a Website was created using HTML,CSS,& Boostrap</p>
 						</div>
 					</div>
 				</div>
@@ -562,16 +663,64 @@
 				<div class="col-md-4 d-flex ftco-animate">
 					<div class="blog-entry">
 						<a href="https://jawadahmadofficial.github.io/JawadAhmad-Food-weblayaout/"
-							class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');">
+							class="block-20 zoom-effect" style="background-image: url('../Portfolio/images/Simple\ Food\ Website.png');">
 						</a>
 						<div class="text mt-3 float-right d-block">
 
 							<h3 class="heading"><a
-									href="#">Power BI Sales dashboard Project for Beginners</a></h3>
-							<p>Designed a power bi dashboard for Madhav Store to track and analyze the online sales data acorss pakistan.</p>
+									href="#">Food website layaOut Project for Beginners</a></h3>
+							<p>This proposal aims to improve restaurant operations by using safe ingredients and reducing the harmful effects of chemicals in food preparation.</p>
 						</div>
 					</div>
 				</div>
+
+
+								<!-- project.No: 4 Power BI Sales dashboard Project for Beginners. -->
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry">
+						<a href="https://jawadahmadofficial.github.io/SMIT-1stHacktanHTML-CSS/"
+							class="block-20 zoom-effect" style="background-image: url('../Portfolio/images/1st\ Heaktan.png');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+
+							<h3 class="heading"><a
+									href="#">The First Heaktan at SMIT Peshawar</a></h3>
+							<p>My first Heaktan Tesrt of learning </p>
+						</div>
+					</div>
+				</div>
+
+				<!-- project.No: 5 Power BI Sales dashboard Project for Beginners. -->
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry">
+						<a href="https://jawadahmadofficial.github.io/JawadAhmad-Food-weblayaout/"
+							class="block-20 zoom-effect" style="background-image: url('../Portfolio/images/Simple\ Food\ Website.png');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+
+							<h3 class="heading"><a
+									href="#">Food website layaOut Project for Beginners</a></h3>
+							<p>This proposal aims to improve restaurant operations by using safe ingredients and reducing the harmful effects of chemicals in food preparation.</p>
+						</div>
+					</div>
+				</div>
+
+
+				<!-- project.No: 6 Power BI Sales dashboard Project for Beginners. -->
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry">
+						<a href="https://jawadahmadofficial.github.io/JawadAhmad-Food-weblayaout/"
+							class="block-20 zoom-effect" style="background-image: url('../Portfolio/images/Simple\ Food\ Website.png');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+
+							<h3 class="heading"><a
+									href="#">Food website layaOut Project for Beginners</a></h3>
+							<p>This proposal aims to improve restaurant operations by using safe ingredients and reducing the harmful effects of chemicals in food preparation.</p>
+						</div>
+					</div>
+				</div>
+
 			</div>
 			<br>
 			<!-- added justify-content-center to center align the last two projects -->
